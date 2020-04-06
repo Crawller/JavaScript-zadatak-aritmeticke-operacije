@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="Zadatak_JS.css">
+    </head>
+    
+    <body>
+        <div class="input_num">
+           <input type="text" id="num1" value="">
+           <br>
+           <br>
+           <input type="text" id="num2" value="">
+           <br>
+        </div>
+           <br>
+        <label for="operators">Choose an operator:</label>
+           <select id="operators" size="4" multiple>
+               <option value="+">+</option>
+               <option value="-">-</option>
+               <option value="/">/</option>
+               <option value="*">*</option>
+           </select>
+           <br>
+        <input type="button" value="=" onclick="calc()">
+        <input type="text" id="result">
+       
+        
+
+         <script>
+             function calc() 
+             {
+                 var num1 = parselFloat(document.getElementById("num1").value);
+                 var num2 = parseFloat(document.getElementById("num2").value);
+                 var oper = document.getElementById("operators").value;
+
+                 if (oper === "+")
+                 {
+                    document.getElementById("result").value = num1+num2;
+                 }
+
+                   if (oper === '-')
+                 {
+                    document.getElementById("result").value = num1-num2;
+                 }
+
+                 if (oper === '/')
+                 {
+                    document.getElementById('result').value = num1/num2;
+                 }
+
+                 if (oper === '*')
+                 {
+                    document.getElementById('result').value = num1*num2;
+                 }  
+
+             }
+         </script>  
+            
+            
+            
+    </body>

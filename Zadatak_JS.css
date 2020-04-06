@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, rgb(87, 228, 221), rgb(28, 185, 88));
+}
+
+.input_num {
+    margin: 10px;
+    
+}
+
+ input {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family:  'Times New Roman', serif;
+    background-color: rgb(241, 216, 185);
+    margin: 20px;
+    cursor: pointer;
+}
+
+#result {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family:  'Times New Roman', serif;
+    background-color: rgb(241, 216, 185);
+}
+
+ 
+
+label {
+    margin: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 20px;
+}
+
+#operators {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
